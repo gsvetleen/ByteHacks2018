@@ -33,7 +33,7 @@ class SecondView: UIViewController {
         
         if Auth.auth().currentUser != nil{
             let user = Auth.auth().currentUser
-            let uid = user?.uid
+            let uid = user?.uid //store this token in firebase
             print("User logged in")
             print(uid ?? 0)
         }
